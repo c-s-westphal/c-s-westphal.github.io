@@ -25,7 +25,6 @@ My research is fundamentally motivated by multivariate information theory, which
 ---
 
 ### Contact
-
-+44 7846 116 138  
+ 
 [charles.westphal.21@ucl.ac.uk](mailto:charles.westphal.21@ucl.ac.uk)  
 [github.com/c-s-westphal](https://github.com/c-s-westphal)
