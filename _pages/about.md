@@ -1,10 +1,8 @@
 ---
 permalink: /
-title: "Charles Westphal - Academic Website"
+title: "Charles Westphal "
 author_profile: true
 ---
-
-# Charles Westphal
 
 **Ph.D. Candidate in Computer Science**  
 University College London
