@@ -21,7 +21,9 @@ I am a Ph.D. candidate at University College London where my research focuses on
 - **Feature Selection, Engineering, and Interpretation**
 - **Reinforcement Learning**
 - **Variational Inference**
+
 My research is fundamentally motivated by multivariate information theory, which provides a robust theoretical framework for understanding complex data interactions. While this deep-rooted theory drives the core principles of my work, the methods developed are broadly applicable to various AI applications. In practice, they can be leveraged in areas such as feature selection, interpretability, and model pruning, making the approach both theoretically rich and widely useful.
+
 ---
 
 ### Contact
