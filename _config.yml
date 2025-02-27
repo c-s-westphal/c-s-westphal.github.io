@@ -44,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/c-s-westphal"
+  github           : "c-s-westphal"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/charles-westphal-4875a7200" # Username
+  linkedin         : "charles-westphal-4875a7200" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
