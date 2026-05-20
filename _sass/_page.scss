@@ -23,6 +23,18 @@
     @include suffix(2 of 12);
   }
 
+  &.page--full {
+    @include breakpoint($large) {
+      width: 100%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
+      float: none;
+    }
+  }
+
   .page__inner-wrap {
     @include full();
 
@@ -36,7 +48,26 @@
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  margin-bottom: 0.6em;
+  line-height: 1.15;
+  padding-bottom: 0.35em;
+  position: relative;
+
+  &:not(:empty)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3.5em;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, $pastel-rose 0%, $pastel-purple 60%, $pastel-mint-deep 100%);
+  }
+
+  &:empty {
+    display: none;
+  }
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -50,8 +81,8 @@
 
 .page__content {
 
-  h2 {
-    padding-bottom: 0.5em;
+  h2, h3 {
+    padding-bottom: 0.35em;
     border-bottom: 1px solid $border-color;
   }
 
@@ -73,10 +104,15 @@
   }
 
   a {
-    text-decoration: underline;
+    color: $pastel-plum;
+    text-decoration: none;
+    border-bottom: 1px solid $pastel-lavender;
+    transition: border-color 0.15s ease, color 0.15s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: mix(#000, $pastel-plum, 15%);
+      border-bottom-color: $pastel-plum;
+      text-decoration: none;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

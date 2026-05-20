@@ -1,30 +1,68 @@
 ---
 permalink: /
-title: "Charles Westphal "
-author_profile: true
+excerpt: "Charles Westphal — PhD candidate in computer science at UCL, working on multivariate information theory for machine learning."
+author_profile: false
 ---
 
-**Ph.D. Candidate in Computer Science**  
-University College London
+{% include hero.html %}
 
-**M.Sc. in Physics** – University of Leeds  
-**MChem in Chemistry** – University of Manchester
+<section id="about" class="scroll-section" markdown="1">
 
----
+I am a Ph.D. candidate in Computer Science at **University College London**, where my work is grounded in multivariate information theory and its applications to modern machine learning.
 
-## About Me
+</section>
 
-I am a Ph.D. candidate at University College London where my research focuses on:
-- **Multivariate Information Theory**
-- **Feature Selection, Engineering, and Interpretation**
-- **Reinforcement Learning**
-- **Variational Inference**
+<section id="research" class="scroll-section" markdown="1">
 
-My research is fundamentally motivated by multivariate information theory, which provides a robust theoretical framework for understanding complex data interactions. While this deep-rooted theory drives the core principles of my work, the methods developed are broadly applicable to various AI applications. In practice, they can be leveraged in areas such as feature selection, interpretability, and model pruning, making the approach both theoretically rich and widely useful.
+## Research
 
----
+My research is motivated by **multivariate information theory** — a framework for reasoning about how information is shared, decomposed, and transformed across complex systems. The methods I develop are theoretically rooted but broadly applicable, with applications in:
 
-### Contact
- 
-[charles.westphal.21@ucl.ac.uk](mailto:charles.westphal.21@ucl.ac.uk)  
-[github.com/c-s-westphal](https://github.com/c-s-westphal)
+- Feature selection, engineering, and interpretation
+- Reinforcement learning
+- Neural network pruning and compression
+- Variational inference and representation learning
+
+Recent work has been published at **SIGKDD**, **AISTATS**, and **ICML**.
+
+</section>
+
+<section id="publications" class="scroll-section">
+
+<h2>Publications</h2>
+
+{% include publications-list.html %}
+
+</section>
+
+<section id="talks" class="scroll-section">
+
+<h2>Talks</h2>
+
+<ul class="talk-list">
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+{% for talk in sorted_talks %}
+  <li>
+    <strong>{{ talk.title }}</strong>
+    <span class="talk-meta">{{ talk.venue }}{% if talk.location %} &middot; {{ talk.location }}{% endif %} &middot; {{ talk.date | date: "%b %Y" }}</span>
+  </li>
+{% endfor %}
+</ul>
+
+</section>
+
+<section id="cv" class="scroll-section" markdown="1">
+
+## CV
+
+[Download my CV (PDF)]({{ site.baseurl }}/images/Charles_Westphal_CV.pdf)
+
+</section>
+
+<section id="contact" class="scroll-section" markdown="1">
+
+## Contact
+
+[charles.westphal.21@ucl.ac.uk](mailto:charles.westphal.21@ucl.ac.uk)
+
+</section>

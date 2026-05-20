@@ -11,3 +11,13 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Editor settings and OS cruft
+.vscode/
+.idea/
+.DS_Store
+.claude/
+
+# Bundler local install
+.bundle/
+vendor/

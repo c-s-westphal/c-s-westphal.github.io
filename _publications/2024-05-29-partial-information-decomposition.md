@@ -1,11 +1,16 @@
 ---
 title: "Partial Information Decomposition for Data Interpretability and Feature Selection"
 collection: publications
+category: conference
 permalink: /publication/2024-05-29-partial-information-decomposition
 excerpt: 'This paper introduces PIDF, a novel approach that simultaneously addresses data interpretability and feature selection by evaluating each feature using three metrics: mutual information, synergistic contribution, and redundancy.'
 date: 2024-05-29
-venue: 'arXiv preprint'
+venue: 'AISTATS 2025'
+authors: 'Charles Westphal, Stephen Hailes, Mirco Musolesi'
 paperurl: 'https://arxiv.org/abs/2405.19212'
+github: 'https://github.com/c-s-westphal/PIDF'
+image: '/images/papers/pidf.png'
+summary: 'PIDF replaces a single feature-importance score with three: how much information a feature shares with the target, how much arises only in combination with others (synergy), and how much is redundant with what other features already carry.'
 citation: 'Westphal, C., Hailes, S., & Musolesi, M. (2024). Partial Information Decomposition for Data Interpretability and Feature Selection. arXiv preprint arXiv:2405.19212.'
 ---
 

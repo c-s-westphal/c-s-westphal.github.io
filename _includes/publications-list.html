@@ -1,0 +1,19 @@
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+
+<h3 class="pub-section-heading">Conference &amp; Journal</h3>
+<div class="pub-cards">
+  {% for pub in sorted_pubs %}
+    {% if pub.category == 'conference' or pub.category == 'journal' %}
+      {% include publication-card.html pub=pub %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h3 class="pub-section-heading">Preprints</h3>
+<div class="pub-cards">
+  {% for pub in sorted_pubs %}
+    {% if pub.category == 'preprint' %}
+      {% include publication-card.html pub=pub %}
+    {% endif %}
+  {% endfor %}
+</div>

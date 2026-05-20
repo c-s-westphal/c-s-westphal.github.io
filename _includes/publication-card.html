@@ -1,0 +1,23 @@
+<article class="pub-card">
+  <div class="pub-card__figure">
+    {% if include.pub.equation %}
+      <div class="pub-card__equation">\[{{ include.pub.equation }}\]</div>
+    {% elsif include.pub.image %}
+      <a href="{{ include.pub.paperurl }}" target="_blank" rel="noopener">
+        <img src="{{ include.pub.image }}" alt="{{ include.pub.title | escape }} figure" loading="lazy">
+      </a>
+    {% endif %}
+  </div>
+  <div class="pub-card__body">
+    <h4 class="pub-card__title">
+      {% if include.pub.paperurl %}<a href="{{ include.pub.paperurl }}" target="_blank" rel="noopener">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}
+    </h4>
+    {% if include.pub.authors %}<p class="pub-card__authors">{{ include.pub.authors }}</p>{% endif %}
+    {% if include.pub.venue %}<p class="pub-card__venue">{{ include.pub.venue }}</p>{% endif %}
+    {% if include.pub.summary %}<p class="pub-card__summary">{{ include.pub.summary }}</p>{% endif %}
+    <p class="pub-card__links">
+      {% if include.pub.paperurl %}<a class="pub-link" href="{{ include.pub.paperurl }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+      {% if include.pub.github != '' and include.pub.github %}<a class="pub-link" href="{{ include.pub.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+    </p>
+  </div>
+</article>

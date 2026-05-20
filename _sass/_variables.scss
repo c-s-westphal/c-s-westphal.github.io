@@ -13,9 +13,9 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$serif                      : "EB Garamond", Garamond, Georgia, Times, serif;
+$sans-serif                 : "Inter", -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$monospace                  : "SF Mono", Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -29,7 +29,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$header-font-family         : $serif;
 $caption-font-family        : $serif;
 
 /* type scale */
@@ -55,24 +55,36 @@ $sidebar-link-max-width     : 250px;
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
+$gray                       : #6e5b78;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #fff;
-$background-color           : #fff;
-$code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+/* Pastel accents - used sparingly on links, accents, and section markers */
+$pastel-blush               : #fbf5f0;
+$pastel-blush-deep          : #f5e4d8;
+$pastel-rose                : #e8a3c0;
+$pastel-lilac               : #f1ecf6;
+$pastel-lavender            : #d9c7ee;
+$pastel-purple              : #a888d9;
+$pastel-plum                : #6d4e9c;
+$pastel-mint                : #d4ecdd;
+$pastel-mint-deep           : #7fbf99;
+$pastel-cream               : #fbfaf7;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+$body-color                 : $pastel-cream;
+$background-color           : $pastel-cream;
+$code-background-color      : #f3eef3;
+$code-background-color-dark : $pastel-lilac;
+$text-color                 : #2a2235;
+$border-color               : #ece6e9;
+
+$primary-color              : $pastel-plum;
+$success-color              : $pastel-mint-deep;
+$warning-color              : #e8b27a;
+$danger-color               : #d98aa5;
+$info-color                 : $pastel-plum;
 
 /* brands */
 $behance-color              : #1769FF;

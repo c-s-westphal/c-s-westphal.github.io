@@ -1,0 +1,36 @@
+{% include base_path %}
+{% assign author = site.author %}
+
+<header class="hero">
+  <div class="hero__avatar">
+    {% if author.avatar contains "://" %}
+      <img src="{{ author.avatar }}" alt="{{ author.name }}">
+    {% else %}
+      <img src="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ author.name }}">
+    {% endif %}
+  </div>
+  <div class="hero__intro">
+    <h1 class="hero__name">{{ author.name }}</h1>
+    {% if author.bio %}<p class="hero__role">{{ author.bio }}{% if author.employer %} · {{ author.employer }}{% endif %}{% if author.location %} · {{ author.location }}{% endif %}</p>{% endif %}
+    <ul class="hero__links">
+      {% if author.email %}
+        <li><a href="mailto:{{ author.email }}" aria-label="Email"><i class="fas fa-fw fa-envelope"></i></a></li>
+      {% endif %}
+      {% if author.googlescholar %}
+        <li><a href="{{ author.googlescholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      {% endif %}
+      {% if author.orcid %}
+        <li><a href="{{ author.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="ai ai-orcid"></i></a></li>
+      {% endif %}
+      {% if author.github %}
+        <li><a href="https://github.com/{{ author.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-fw fa-github"></i></a></li>
+      {% endif %}
+      {% if author.linkedin %}
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin"></i></a></li>
+      {% endif %}
+      {% if author.twitter %}
+        <li><a href="https://twitter.com/{{ author.twitter }}" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fab fa-fw fa-x-twitter"></i></a></li>
+      {% endif %}
+    </ul>
+  </div>
+</header>
