@@ -27,6 +27,36 @@ Recent work has been published at **SIGKDD**, **AISTATS**, and **ICML**.
 
 </section>
 
+<section id="experience" class="scroll-section">
+
+<h2>Experience</h2>
+
+<ul class="exp-list">
+  <li class="exp-item">
+    <div class="exp-head">
+      <span class="exp-role"><strong>Ph.D. Candidate</strong> · University College London</span>
+      <span class="exp-date">2021 — Present</span>
+    </div>
+    <p class="exp-desc">Applications of partial information decomposition to AI. Supervised by Mirco Musolesi and Stephen Hailes.</p>
+  </li>
+  <li class="exp-item">
+    <div class="exp-head">
+      <span class="exp-role"><strong>Research Assistant</strong> · UCL Computer Science</span>
+      <span class="exp-date">May — Jun 2026</span>
+    </div>
+    <p class="exp-desc">Applying partial information decomposition to understanding agents. Supervised by Mirco Musolesi and Stephen Hailes.</p>
+  </li>
+  <li class="exp-item">
+    <div class="exp-head">
+      <span class="exp-role"><strong>MATS Scholar</strong> · Machine Learning Alignment &amp; Theory Scholars</span>
+      <span class="exp-date">Jun 2025 — Mar 2026</span>
+    </div>
+    <p class="exp-desc">Improving steganography, its detection, and understanding its theoretical limits. Supervised by Fernando Rosas and Keivan Navaie.</p>
+  </li>
+</ul>
+
+</section>
+
 <section id="publications" class="scroll-section">
 
 <h2>Publications</h2>

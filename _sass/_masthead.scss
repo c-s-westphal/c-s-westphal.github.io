@@ -65,6 +65,11 @@
 
     .masthead__menu-item--lg {
       margin-right: auto;
+      flex-shrink: 0;
+
+      a {
+        white-space: nowrap;
+      }
     }
   }
 
