@@ -46,6 +46,33 @@
     clear: both;
     list-style-type: none;
   }
+
+  .greedy-nav {
+    background: transparent;
+
+    button {
+      display: none !important;
+    }
+  }
+
+  .visible-links {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+
+    li {
+      display: inline-flex !important;
+      vertical-align: middle;
+    }
+
+    .masthead__menu-item--lg {
+      margin-right: auto;
+    }
+  }
+
+  .hidden-links {
+    display: none !important;
+  }
 }
 
 .masthead__menu-item {
