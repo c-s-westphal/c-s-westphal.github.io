@@ -19,14 +19,12 @@
   z-index: 20;
 
   &__inner-wrap {
-    @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 1em 0;
     font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 
     nav {
       z-index: 10;
