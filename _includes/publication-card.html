@@ -1,13 +1,20 @@
-<article class="pub-card">
+{% assign has_equation = false %}
+{% assign has_image = false %}
+{% if include.pub.equation and include.pub.equation != '' %}{% assign has_equation = true %}{% endif %}
+{% if include.pub.image and include.pub.image != '' %}{% assign has_image = true %}{% endif %}
+
+<article class="pub-card{% unless has_equation or has_image %} pub-card--no-figure{% endunless %}">
+  {% if has_equation or has_image %}
   <div class="pub-card__figure">
-    {% if include.pub.equation %}
+    {% if has_equation %}
       <div class="pub-card__equation">\[{{ include.pub.equation }}\]</div>
-    {% elsif include.pub.image %}
+    {% elsif has_image %}
       <a href="{{ include.pub.paperurl }}" target="_blank" rel="noopener">
         <img src="{{ include.pub.image }}" alt="{{ include.pub.title | escape }} figure" loading="lazy">
       </a>
     {% endif %}
   </div>
+  {% endif %}
   <div class="pub-card__body">
     <h4 class="pub-card__title">
       {% if include.pub.paperurl %}<a href="{{ include.pub.paperurl }}" target="_blank" rel="noopener">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}
@@ -17,7 +24,7 @@
     {% if include.pub.summary %}<p class="pub-card__summary">{{ include.pub.summary }}</p>{% endif %}
     <p class="pub-card__links">
       {% if include.pub.paperurl %}<a class="pub-link" href="{{ include.pub.paperurl }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
-      {% if include.pub.github != '' and include.pub.github %}<a class="pub-link" href="{{ include.pub.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if include.pub.github and include.pub.github != '' %}<a class="pub-link" href="{{ include.pub.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
     </p>
   </div>
 </article>
