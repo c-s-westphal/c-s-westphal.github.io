@@ -4,7 +4,7 @@ collection: publications
 category: conference
 permalink: /publication/2026-01-30-hide-and-seek-embedding-space
 excerpt: 'This paper introduces geometry-based steganography in fine-tuned LLMs using embedding-space-derived mappings, and proposes mechanistic-interpretability-based detection via linear probes on model activations. Accepted to ICML 2026.'
-date: 2026-01-30
+date: 2026-07-15
 venue: 'ICML 2026'
 authors: 'Charles Westphal, Keivan Navaie, Fernando E. Rosas'
 paperurl: 'https://arxiv.org/abs/2601.22818'

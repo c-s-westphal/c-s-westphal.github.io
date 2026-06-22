@@ -4,7 +4,7 @@ collection: publications
 category: journal
 permalink: /publication/2024-01-21-information-theoretic-state-selection
 excerpt: 'This paper introduces the Transfer Entropy Redundancy Criterion (TERC), an information-theoretic approach for identifying optimal state variables in RL that provably excludes variables with no effect on agent performance. Accepted to TMLR.'
-date: 2024-01-21
+date: 2026-04-01
 venue: 'TMLR 2026'
 authors: 'Charles Westphal, Stephen Hailes, Mirco Musolesi'
 paperurl: 'https://arxiv.org/abs/2401.11512'

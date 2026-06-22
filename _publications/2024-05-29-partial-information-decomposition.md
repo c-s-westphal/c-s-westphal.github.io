@@ -4,7 +4,7 @@ collection: publications
 category: conference
 permalink: /publication/2024-05-29-partial-information-decomposition
 excerpt: 'This paper introduces PIDF, a novel approach that simultaneously addresses data interpretability and feature selection by evaluating each feature using three metrics: mutual information, synergistic contribution, and redundancy.'
-date: 2024-05-29
+date: 2025-05-03
 venue: 'AISTATS 2025'
 authors: 'Charles Westphal, Stephen Hailes, Mirco Musolesi'
 paperurl: 'https://arxiv.org/abs/2405.19212'
