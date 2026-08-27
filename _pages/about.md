@@ -8,7 +8,7 @@ author_profile: false
 
 <section id="about" class="scroll-section" markdown="1">
 
-I am a Ph.D. candidate in Computer Science at **University College London**, where my work is grounded in multivariate information theory and its applications to modern machine learning.
+I am a Ph.D. candidate in Computer Science at **University College London**, where my work is grounded in multivariate information theory and its applications to machine learning.
 
 </section>
 
@@ -18,10 +18,12 @@ I am a Ph.D. candidate in Computer Science at **University College London**, whe
 
 My research is motivated by **multivariate information theory** — a framework for reasoning about how information is shared, decomposed, and transformed across complex systems. The methods I develop are theoretically rooted but broadly applicable, with applications in:
 
+- Evasive behaviour in LLMs
+- Covert-communication in LLMs
+- Mechanistic interpretability in LLMs
 - Feature selection, engineering, and interpretation
 - Reinforcement learning
 - Neural network pruning and compression
-- Variational inference and representation learning
 
 Recent work has been published at **SIGKDD**, **AISTATS**, and **ICML**.
 
