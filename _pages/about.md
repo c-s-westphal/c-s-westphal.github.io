@@ -1,6 +1,6 @@
 ---
 permalink: /
-excerpt: "Charles Westphal — PhD candidate in computer science at UCL, working on multivariate information theory for machine learning."
+excerpt: "Charles Westphal — PhD candidate at UCL using multivariate information theory to make AI systems more transparent, monitorable, and safe."
 author_profile: false
 ---
 
@@ -8,7 +8,7 @@ author_profile: false
 
 <section id="about" class="scroll-section" markdown="1">
 
-I am a Ph.D. candidate in Computer Science at **University College London**, where my work is grounded in multivariate information theory and its applications to machine learning.
+I am a Ph.D. candidate in Computer Science at **University College London**, where my work is grounded in multivariate information theory and its applications to AI safety.
 
 </section>
 
